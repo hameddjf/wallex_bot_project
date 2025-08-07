@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_celery_beat",
     'django_redis', 
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -169,3 +170,14 @@ CACHES = {
 # SESSION_ENGINE = "django_redis.session.SessionStore"
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'API پروژه wallex_bot',
+    'DESCRIPTION': 'مستندات API برای پروژه wallex_bot ....',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
