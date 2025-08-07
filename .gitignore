@@ -1,0 +1,69 @@
+# بایت‌کد پایتون
+__pycache__/
+*.py[cod]
+*$py.class
+
+# فایل‌های پایگاه داده SQLite
+*.sqlite3
+db.sqlite3
+
+# فایل‌های محیط مجازی
+venv/
+virtual/
+env/
+ENV/
+.venv/
+.env/
+.Python/
+
+config/
+
+
+.gitignoe/
+
+# فایل‌های مربوط به سیستم‌عامل
+.DS_Store
+Thumbs.db
+
+# فایل‌های مربوط به ویرایشگرها و IDEها
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# فایل‌های لاگ
+*.log
+
+# فایل‌های رسانه‌ای آپلود شده توسط کاربر (معمولاً در پوشه media)
+# اگر می‌خواهید این فایل‌ها را در ریپازیتوری نگه دارید، این خط را کامنت کنید یا حذف کنید.
+media/
+
+# فایل‌های استاتیک جمع‌آوری شده (معمولاً در پوشه staticfiles یا assets)
+# اگر می‌خواهید این فایل‌ها را در ریپازیتوری نگه دارید، این خط را کامنت کنید یا حذف کنید.
+# staticfiles/
+assets/
+
+# فایل‌های مربوط به تست و پوشش کد
+.coverage
+htmlcov/
+*.cover
+
+# فایل‌های مربوط به پکیج‌های پایتون
+*.egg-info/
+dist/
+build/
+*.egg
+
+# فایل‌های مربوط به Jupyter Notebook
+.ipynb_checkpoints
+
+# فایل‌های مربوط به تنظیمات محلی (local settings)
+local_settings.py
+*.local.py
+
+# فایل‌های مربوط به Docker
+.dockerignore
+docker-compose.yml.override
+
+# فایل‌های مربوط به ابزارهای دیگر
+.tox/
