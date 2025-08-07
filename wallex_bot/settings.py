@@ -159,15 +159,13 @@ CELERY_BEAT_SCHEDULE = {
 CACHES = {
         "default": {
             "BACKEND": "django_redis.cache.RedisCache",
-            "LOCATION": "redis://127.0.0.1:6379/1", # این آدرس را چک کنید: هاست (127.0.0.1)، پورت (6379) و دیتابیس (1)
+            "LOCATION": "redis://127.0.0.1:6379/1",
             "OPTIONS": {
                 "CLIENT_CLASS": "django_redis.client.DefaultClient",
             }
         }
     }
 
-    # اگر قصد دارید از Redis برای ذخیره Session ها هم استفاده کنید:
 # SESSION_ENGINE = "django_redis.session.SessionStore"
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
-    
